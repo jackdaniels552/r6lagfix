@@ -2,10 +2,10 @@ title RainbowSix Lag Fix by Jack Daniels
 @echo off
 
 :: Created by Jack Daniels
-:: Version 1.3 Pre-Release
+:: Version 1.4 Pre-Release
 
 echo Author: Jack Daniels
-echo Version: 1.3 Pre-Release
+echo Version: 1.4 Pre-Release
 echo WARNING: Use of this script is at your own risk.
 echo Please report any issues on the GitHub page: https://github.com/jackdaniels552/r6lagfix.
 
