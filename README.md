@@ -2,6 +2,7 @@
 Lag fix Batch file for the game Rainbow Six Siege.
 
 USE AT YOUR OWN RISK! This script is just a basic Batch file.
+If you have any issues try running it as administrator. 
 
 This has 3 options
 
