@@ -1,3 +1,4 @@
+title RainbowSix Lag Fix by Jack Daniels
 @echo off
 
 :: Created by Jack Daniels
