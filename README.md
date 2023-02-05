@@ -1,4 +1,4 @@
-# r6lagfix
+# Rainbow Six Siege Lag Fix
 Lag fix Batch file for the game Rainbow Six Siege.
 
 USE AT YOUR OWN RISK! This script is just a basic Batch file.
