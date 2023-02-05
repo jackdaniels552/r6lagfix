@@ -22,7 +22,7 @@ if /i "%confirm%" NEQ "yes" (
 :loop
 echo Running the script...
 
-powershell -Command "$rainbowSix = Get-Process | Where-Object { $_.ProcessName -eq 'RainbowSix' -or $_.ProcessName -eq 'RainbowSix_Vulkan' }; if ($rainbowSix) { foreach ($process in $rainbowSix) { $process.ProcessorAffinity = [Math]::Pow(2, %numProcessors% - 1) - 1 } } else { Write-Host 'Neither RainbowSix nor RainbowSix_Vulkan processes were detected.'; break }"
+powershell -Command "$rainbowSix = Get-Process | Where-Object { $_.ProcessName -eq 'RainbowSix' -or $_.ProcessName -eq 'RainbowSix_Vulkan' }; if ($rainbowSix) { foreach ($process in $rainbowSix) { $process.ProcessorAffinity = [int]([Math]::Pow(2, %numProcessors% - 1) - 1) } } else { Write-Host 'Neither RainbowSix nor RainbowSix_Vulkan processes were detected.'; break }"
 
 timeout /t 600
 
