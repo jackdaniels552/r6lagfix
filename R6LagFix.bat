@@ -2,10 +2,10 @@ title RainbowSix Lag Fix by Jack Daniels
 @echo off
 
 :: Created by Jack Daniels
-:: Version 1.4 Pre-Release
+:: Version 1.5
 
 echo Author: Jack Daniels
-echo Version: 1.4 Pre-Release
+echo Version: 1.5
 echo WARNING: Use of this script is at your own risk.
 echo Please report any issues on the GitHub page: https://github.com/jackdaniels552/r6lagfix.
 
@@ -27,19 +27,7 @@ powershell -Command "$rainbowSix = Get-Process | Where-Object { $_.ProcessName -
 
 timeout /t 600
 
-set /p stop=Do you want to stop the script? (yes/no): 
-if /i "%stop%" == "yes" (
-  if /i "%stop%" == "y" (
-    echo Stopping the script...
-    goto end
-  )
-) else (
-  if /i "%stop%" == "no" (
-    if /i "%stop%" == "n" (
-      goto loop
-    )
-  )
-)
+goto loop
 
 :end
 echo The script has been stopped.
